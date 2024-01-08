@@ -54,18 +54,18 @@ static uint16_t auto_pointer_layer_timer = 0;
 #    define SNIPING KC_NO
 #endif // !POINTING_DEVICE_ENABLE
 
-enum combos { JK_LEFT, KX_RGHT, BM_UP, MW_DOWN };
+enum combos { CV_LEFT, VB_RGHT, NM_UP, MCOMM_DOWN };
 
-const uint16_t PROGMEM kx_combo[] = {KC_K, KC_X, COMBO_END};
-const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM bm_combo[] = {KC_B, KC_M, COMBO_END};
-const uint16_t PROGMEM mw_combo[] = {KC_M, KC_W, COMBO_END};
+const uint16_t PROGMEM vb_combo[]    = {KC_V, KC_B, COMBO_END};
+const uint16_t PROGMEM cv_combo[]    = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM nm_combo[]    = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM mcomm_combo[] = {KC_M, KC_COMM, COMBO_END};
 
 combo_t key_combos[] = {
-    [KX_RGHT] = COMBO(kx_combo, KC_RIGHT),
-    [JK_LEFT] = COMBO(jk_combo, KC_LEFT),
-    [BM_UP]   = COMBO(bm_combo, KC_UP),
-    [MW_DOWN] = COMBO(mw_combo, KC_DOWN),
+    [VB_RGHT]    = COMBO(vb_combo, KC_RIGHT),
+    [CV_LEFT]    = COMBO(cv_combo, KC_LEFT),
+    [NM_UP]      = COMBO(nm_combo, KC_UP),
+    [MCOMM_DOWN] = COMBO(mcomm_combo, KC_DOWN),
 };
 
 // clang-format off
